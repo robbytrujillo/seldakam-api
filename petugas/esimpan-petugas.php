@@ -15,6 +15,6 @@ $telp = $_POST['telp'];
 $level = $_POST['level'];
 $foto_profile = $_POST['foto_profile'];
 
-$ubah = mysqli_query($koneksi, "UPDATE petugas set nama_petugas='$nama_petugas', username='$username', 
+$ubah = mysqli_query($connect, "UPDATE petugas set nama_petugas='$nama_petugas', username='$username', 
 password='$password', telp='$telp', level='$level', foto_profile='$foto_profile' WHERE id_petugas='$id'") 
 or die(mysqli_error()); 
