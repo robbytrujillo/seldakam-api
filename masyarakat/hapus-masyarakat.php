@@ -9,4 +9,4 @@ include("../koneksi/connection.php");
 
 $id = $_POST['id'];
 
-$hapus = mysqli_query($connect, "DELETE FROM petugas WHERE nik='$id'") or die (mysqli_error());
+$hapus = mysqli_query($connect, "DELETE FROM masyarakat WHERE nik='$id'") or die (mysqli_error());
