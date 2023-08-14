@@ -9,7 +9,7 @@ include("../koneksi/connection.php");
 
 $data = array();
 $id = $_GET['id'];
-$cari = mysqli_query($connect, "SELECT * FROM tanggapan WHERE id='$id'") or die (mysqli_error());
+$cari = mysqli_query($connect, "SELECT * FROM tanggapan WHERE id_tanggapan='$id'") or die (mysqli_error());
 while($row=mysqli_fetch_array($cari)) {
     $data[] = $row;
 }
